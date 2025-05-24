@@ -1,4 +1,4 @@
-# Farm Stack Project - To-Do List Application
+# farm_stack_project
 
 A modern full-stack To-Do List app designed to help you organize your tasks effortlessly. This project combines a powerful *FastAPI* backend with a sleek *React* frontend, backed by *MongoDB Atlas* for reliable data persistence.
 
@@ -78,7 +78,7 @@ docker-compose down --volumes --remove-orphans
 
 ---
 
-🎥 Demo Video
+## 🎥 Demo Video
 
-Watch Demo Video
+[▶ Watch Demo Video](https://drive.google.com/file/d/1VfS1wss6cCpvAadN7TOJMkVHM9NN13_0/view?usp=drivesdk)
   
