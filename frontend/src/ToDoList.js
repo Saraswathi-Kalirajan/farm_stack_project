@@ -87,7 +87,7 @@ function ToDoList({ listId, handleBackButton }) {
               className={item.checked ? "item checked" : "item"}
               onClick={() => handleCheckToggle(item.id, !item.checked)}
             >
-              <span>{item.checked ? "✅" : "⬜️"} </span>
+              <span>{item.checked ? "✅" : "⬜"} </span>
               <span className="label">{item.label} </span>
               <span className="flex"></span>
               <span

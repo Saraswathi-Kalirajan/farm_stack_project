@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import ListToDoLists from "./ListTodoLists";
 import ToDoList from "./ToDoList";
+import logo from "./logo.svg"; // Add this line
 
 function App() {
   const [listSummaries, setListSummaries] = useState(null);
@@ -20,11 +21,8 @@ function App() {
 
   function handleNewToDoList(newName) {
     const updateData = async () => {
-      const newListData = {
-        name: newName,
-      };
-
-      await axios.post(`/api/lists`, newListData);
+      const newListData = { name: newName };
+      await axios.post("/api/lists", newListData);
       reloadData().catch(console.error);
     };
     updateData();
@@ -48,24 +46,21 @@ function App() {
     reloadData().catch(console.error);
   }
 
-  if (selectedItem === null) {
-    return (
-      <div className="App">
+  return (
+    <div className="App">
+      <img src={logo} alt="App Logo" width="120" />
+      {selectedItem === null ? (
         <ListToDoLists
           listSummaries={listSummaries}
           handleSelectList={handleSelectList}
           handleNewToDoList={handleNewToDoList}
           handleDeleteToDoList={handleDeleteToDoList}
         />
-      </div>
-    );
-  } else {
-    return (
-      <div className="App">
+      ) : (
         <ToDoList listId={selectedItem} handleBackButton={backToList} />
-      </div>
-    );
-  }
+      )}
+    </div>
+  );
 }
 
 export default App;
