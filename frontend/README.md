@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Farm Stack Project - To-Do List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern full-stack To-Do List app designed to help you organize your tasks effortlessly. This project combines a powerful *FastAPI* backend with a sleek *React* frontend, backed by *MongoDB Atlas* for reliable data persistence.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Highlights
 
-### npm start
+- Complete CRUD operations for managing to-do lists and individual tasks  
+- Built with asynchronous Python and FastAPI for high performance  
+- Responsive React UI for an intuitive user experience  
+- Cloud-ready MongoDB Atlas integration  
+- Containerized using Docker and Docker Compose for easy deployment  
+- NGINX as a reverse proxy to route frontend and backend requests  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tools Used
 
-### npm test
+- *FastAPI* — Backend API framework  
+- *React* — Frontend UI library  
+- *MongoDB Atlas* — Cloud-hosted NoSQL database  
+- *Motor* — Async MongoDB driver for Python  
+- *Axios* — HTTP client for frontend API calls  
+- *Docker & Docker Compose* — Containerization and orchestration  
+- *NGINX* — Reverse proxy configuration  
+- *Uvicorn* — ASGI server to run FastAPI  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### npm run build
+## 🌐 Tech Stack
 
-Builds the app for production to the build folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Python  
+- JavaScript (React)  
+- MongoDB (NoSQL)  
+- Docker  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Local Setup Instructions
 
-### npm run eject
+### Prerequisites
 
-**Note: this is a one-way operation. Once you eject, you can't go back!**
+- Docker and Docker Compose installed  
+- MongoDB Atlas cluster with connection URI  
 
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+### Steps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. *Clone the repository:*
 
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/Saraswathi-Kalirajan/farm_stack_project.git
+   cd farm_stack_project
+ 2. Create a .env file in the root directory and add your MongoDB connection string:
 
-## Learn More
+MONGODB_URI="mongodb+srv://saraswathik729:saras1206@cluster0.h5mj6lr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Build and start the containers:
 
-### Code Splitting
+docker-compose up --build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+4. Access the application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Frontend UI: http://localhost:3000
 
-### Making a Progressive Web App
+API Docs: http://localhost:3001/docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. To stop and clean up the environment:
 
-### Deployment
+docker-compose down --volumes --remove-orphans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### npm run build fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+🎥 Demo Video
+
+Watch Demo Video
+  
